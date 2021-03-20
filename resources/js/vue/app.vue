@@ -4,7 +4,9 @@
             <h2 id="title">Todo List</h2>
             <add-item-form></add-item-form>
         </div>
-        <list-view :items="items"></list-view>
+        <list-view 
+            :items="items" 
+        />
     </div>
 </template>
 <script>

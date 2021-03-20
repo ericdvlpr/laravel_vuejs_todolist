@@ -5,7 +5,7 @@
             @change="updateCheck()"
             
         />
-       <span >{{item.name}}</span>
+        <span>{{item.name}}</span>
        <button @click="removeItem()" class="trashcan">
            <font-awesome-icon icon="trash" />
        </button>
@@ -13,7 +13,10 @@
 </template>
 <script>
 export default {
-    props:['item']
+    props:['item'],
+    created(){
+        console.log(this.item);
+    }
 }
 </script> 
 <style scoped>
