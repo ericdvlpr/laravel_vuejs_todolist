@@ -1,5 +1,6 @@
 <template>
     <div class="item">
+        
        <input 
             type="checkbox"
             @change="updateCheck()"
@@ -13,10 +14,7 @@
 </template>
 <script>
 export default {
-    props:['item'],
-    created(){
-        console.log(this.item);
-    }
+    props:['item']
 }
 </script> 
 <style scoped>
